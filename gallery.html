@@ -121,5 +121,19 @@
             <p>&copy; 2026 Eden House Public School. All rights reserved.</p>
         </div>
     </footer>
+     <script>
+        const toggle = document.querySelector(".menu-toggle");
+        const links = document.querySelector(".nav-links");
+
+        toggle.addEventListener("click", () => {
+            const isOpen = links.classList.toggle("open");
+            toggle.setAttribute("aria-expanded", isOpen);
+        });
+
+        // close the menu after tapping a link
+        links.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => links.classList.remove("open"));
+        });
+    </script>
     <script src="script.js"></script>
 </html>
