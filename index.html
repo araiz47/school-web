@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eden House Public School</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rouge+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eden House Public School</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rouge+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
     <header>
         <nav class="navbar">
             <a href="index.html" class="branding">
@@ -19,11 +19,13 @@
             <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
             <div class="nav-links">
                 <a href="about.html">About</a>
-                <a href="#admissions">Admissions</a>
-                <a href="#academics">Academics</a>
-                <a href="#scholarship">Youth Scholarship Program</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#contacts">Contact Us</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="academics.html">Academics</a>
+                <a href="news.html">News and Events</a>
+                <a href="scholarship.html">Youth Scholarship Program</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contacts.html">Contact Us</a>
+
             </div>
         </nav>
     </header>
@@ -36,7 +38,7 @@
                 <h1>Shaping Bright Futures</h1>
                 <p>Quality Education, strong values, and a nurturing environment for every child.</p>
                 <div class="hero-buttons">
-                    <a href="#admissions" class="btn btn-primary">Apply Now</a>
+                    <a href="admissions.html" class="btn btn-primary">Apply Now</a>
                     <a href="about.html" class="btn btn-secondary">Learn More</a>
                 </div>
             </div>
@@ -112,65 +114,35 @@
                 <h3>Equity and Social Justice</h3>
                 <p>We are committed to access, equity, diversity, anti-racism, human rights and participation in our community.</p>
             </div>
-        </section>
-        <section class="admissions" id="admissions">
-    <div class="admissions-content">
-
-        <div class="admissions-info">
-            <h2>Admission Inquiry</h2>
-            <p>Interested in joining the Eden House family? Fill in the form and our admissions team will get back to you with details about enrollment, fees, and the next steps.</p>
-            <ul>
-                <li>Submit the inquiry form</li>
-                <li>We contact you to arrange a visit or test</li>
-                <li>Complete enrollment</li>
-            </ul>
+    </section>
+    <section class="page-section alt">
+        <h2 class="section-title">Latest News</h2>
+        <div class="cards">
+            <!-- paste the same three <article class="card"> blocks from news.html -->
         </div>
-
-        <form class="inquiry-form" action="#" method="post">
-            <div class="form-row">
-                <label for="parent-name">Parent / Guardian Name</label>
-                <input type="text" id="parent-name" name="parent-name" required>
-            </div>
-
-            <div class="form-row">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-
-            <div class="form-row">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-            </div>
-
-            <div class="form-row">
-                <label for="child-name">Child's Name</label>
-                <input type="text" id="child-name" name="child-name" required>
-            </div>
-
-            <div class="form-row">
-                <label for="class-level">Class Applying For</label>
-                <select id="class-level" name="class-level" required>
-                    <option value="">Select a class</option>
-                    <option>Playgroup</option>
-                    <option>Nursery</option>
-                    <option>Prep</option>
-                    <option>Class 1 - 5</option>
-                    <option>Class 6 - 8</option>
-                    <option>Class 9 - 10</option>
-                </select>
-            </div>
-
-            <div class="form-row">
-                <label for="message">Message (optional)</label>
-                <textarea id="message" name="message" rows="4"></textarea>
-            </div>
-
-            <button type="submit" class="inquiry-btn">Send Inquiry</button>
-        </form>
-
-    </div>
+        <p class="news-more"><a href="news.html" class="btn btn-primary">View All News</a></p>
 </section>
-
+    <section class="page-section alt">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq">
+            <details>
+                <summary>Can I apply online?</summary>
+                <p>The online form is an inquiry only. Admission is completed on campus with the required documents.</p>
+            </details>
+            <details>
+                <summary>What are the fees?</summary>
+                <p>The fee structure is shared at the admissions office.</p>
+            </details>
+            <details>
+                <summary>Is there an entry test?</summary>
+                <p>Younger classes have a friendly interaction, and Class 1 and above have a short test.</p>
+            </details>
+            <details>
+                <summary>When does the new session start?</summary>
+                <p>The information is shared at the admissions office.</p>
+            </details>
+        </div>
+    </section>
     </main>
 
     <footer class="footer">
@@ -184,10 +156,12 @@
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <a href="about.html">About</a>
-                <a href="#admissions">Admissions</a>
-                <a href="#academics">Academics</a>
-                <a href="#scholarship">Youth Scholarship Program</a>
-                <a href="#contacts">Contact Us</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="academics.html">Academics</a>
+                <a href="news.html">News and Events</a>
+                <a href="scholarship.html">Youth Scholarship Program</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contacts.html">Contact Us</a>
             </div>
 
             <div class="footer-col" id="contacts">
@@ -201,20 +175,6 @@
             <p>&copy; 2026 Eden House Public School. All rights reserved.</p>
         </div>
     </footer>
-
-    <script>
-        const toggle = document.querySelector(".menu-toggle");
-        const links = document.querySelector(".nav-links");
-
-        toggle.addEventListener("click", () => {
-            const isOpen = links.classList.toggle("open");
-            toggle.setAttribute("aria-expanded", isOpen);
-        });
-
-        // close the menu after tapping a link
-        links.querySelectorAll("a").forEach(link => {
-            link.addEventListener("click", () => links.classList.remove("open"));
-        });
-    </script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
