@@ -914,6 +914,11 @@ header {
     font-size: 0.9rem;
     color: var(--muted);
 }
+.levels .card img {
+    height: 240px;
+    object-fit: contain;
+    background-color: var(--pale);
+}
 
 /* ---------- Gallery ---------- */
 .gallery-filters {
